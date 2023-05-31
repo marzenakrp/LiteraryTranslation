@@ -68,7 +68,7 @@ Each entry contains the following information:
 - `comment`: *(str)* translator's comment about the two translation, all references to translations were unified so that translation 1 is referred to as `T1` while translation 2 is referred to as `T2`;
 - `choice`: *(str)* translator's preferences as to which of the two translations is better (multiple-choice);
 - `added_omitted`: *(str)* information on whether any of the texts adds or omits important information (multiple-choice);
-- `annotations`: *(dict)* a dictionary containing error annotations for `text1` and `text2`. `start` and `end` indicate indices in the given text, `labels` is a dictionary with all labels assigned to the given span.
+- `annotations`: *(dict)* a dictionary containing error annotations for `text1` and `text2`. `start` and `end` indicate indices in the given text, `labels` is a list with all labels assigned to the given span.
 
 Translation errors in `v1` can be one of the following:
 - `MISTRANSLATION` - text was mistranslated or translated overly literally;
