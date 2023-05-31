@@ -63,7 +63,8 @@ Each entry contains the following information:
 - `target_lang`: *(str)* language code for the target language;
 - `text1`: *(str)* translation presented to the annotators as translation 1;
 - `text2`: *(str)* translation presented to the annotators as translation 2;
-- `text1_tag`: *(str)* specifies the type of translation 1 as one of the following: SENT (sentence-level translation with `davinci-003`), PARA (paragraph-level translation with `davinci-003`), PARA_SENT (sentence-level translation including context with `davinci-003`), GTr (output of `GoogleTranslate`)
+- `text1_tag`: *(str)* specifies the type of translation 1 as one of the following: SENT (sentence-level translation with `davinci-003`), PARA (paragraph-level translation with `davinci-003`), PARA_SENT (sentence-level translation including context with `davinci-003`), GTr (output of `GoogleTranslate`);
+- `text2_tag`: *(str)* specifies the type of translation 2 as one of the following: SENT (sentence-level translation with `davinci-003`), PARA (paragraph-level translation with `davinci-003`), PARA_SENT (sentence-level translation including context with `davinci-003`), GTr (output of `GoogleTranslate`);
 - `difficult_choice`: *(str)* indicator of whether the translator found both translations of similar quality (multiple-choice);
 - `comment`: *(str)* translator's comment about the two translation, all references to translations were unified so that translation 1 is referred to as `T1` while translation 2 is referred to as `T2`;
 - `choice`: *(str)* translator's preferences as to which of the two translations is better (multiple-choice);
