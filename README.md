@@ -5,8 +5,9 @@
 This is the official repository for evaluation data from "Large language models effectively leverage document-level context for literary translation, but critical errors persist" (check out our [paper](http://arxiv.org/abs/2304.03245) for details).
 
 ### DATA
+***
 
-This repository contains error annotations. These annotations were performed on two translation outputs at a time in [LabelStudio](https://labelstud.io/). You can view the actual interface simply by downloading the data in `./annotations/labelstudio_format_v1` and unploading it to LabelStudio. You also need to use the code in `labelstudio_interface_code` as the interface. If you just want to download the actual data you should download the `./annotations/default_v1` file. This file contains the pairwise comparisons along with error annotations for each translation and translator's comments. Here is the general structure:
+This repository contains error annotations on machine translated literary work. The annotations were performed on two translation outputs at a time in [LabelStudio](https://labelstud.io/). You can view the actual interface simply by downloading the data in `./annotations/labelstudio_format_v1` and unploading it to LabelStudio. You will also need to use the code in `labelstudio_interface_code` as the interface. If you just want to download the actual data you should download the `./annotations/default_v1` file. This file contains the pairwise comparisons along with error annotations for each translation and translator's comments. Here is the general structure:
 
 ```json
 {
