@@ -1,0 +1,71 @@
+<View className="container">
+  <Style> .para { margin-top: 20px; margin-bottom: 20px; font-size: 18px; width: 750px; display:in-line;}</Style>
+  <Style> .container { margin-top: 30px; padding-left:30px; }</Style>
+  <Style> .required { border-color: red; }</Style>
+  <Header>Consider the following SOURCE PARAGRAPH and two competitive TRANSLATIONS:</Header>
+
+  <View className="para"> 
+    <HyperText name="src" value="$source"/>
+  </View>
+  
+  <View className="para"> 
+    <HyperText name="hum" value="$target"/>
+  </View>
+  
+  <Header style="margin-top: 20px" value="Annotate all mistakes in each translation. Refer to the gudelines for details."/>
+  
+  <Labels name="label" toName="text">
+    <Label value="GRAMMAR" background="red"/>
+    <Label value="MISTRANSLATION" background="darkorange"/>
+    <Label value="UNTRANSLATED" background="green"/>
+  	<Label value="INCONSISTENCY" background="yellow"/>
+    <Label value="REGISTER" background="blue"/>
+    <Label value="FORMAT" background="cyan"/>
+    <Label value="REPETITION" background="purple"/></Labels>
+
+  
+  
+  <Text name="text" value="$merged" granularity="word"/>
+
+  <Header style="margin-top: 40px" value="Which of the following is true?"/>
+
+  <View className="choice-parent">
+  <Choices name="AdditionOmission" choice="single-radio" toName="src" showInline="true" required="true">
+    <Choice value="TRANSLATION 1 adds or omits information that significantly change the meaning of the text."/>
+    <Choice value="TRANSLATION 2 adds or omits information that significantly change the meaning of the text."/>
+    <Choice value="BOTH translations add or omit information that significantly change the meaning of the text."/>
+    <Choice value="NEITHER of the translations add or omit information that significantly change the meaning of the text"/>
+  </Choices>
+  </View>
+
+  
+  <Header style="margin-top: 40px" value="Which translation is better overall?"/>
+
+  <View className="choice-parent">
+  <Choices name="BetterTranslation" choice="single-radio" toName="src" showInline="true" required="true">
+    <Choice value="TRANSLATION 1"/>
+    <Choice value="TRANSLATION 2"/>
+  </Choices>
+  </View>
+    <View className="para"> 
+    <HyperText name="txt1" value="$text1_tag"/>
+  </View>
+    <View className="para"> 
+    <HyperText name="txt2" value="$text2_tag"/>
+  </View>
+  
+  <Header>Please motivate your choice in 2 to 5 sentences. </Header>
+  
+  <TextArea name="comments" toName="src" showSubmitButton="false" rows="5" editable="true" maxSubmissions="1" required="true"/>
+
+  <Header style="margin-top: 40px" value="Was it hard to decide between the two translations because of their quality (i.e., they are comparabily good or bad)?"/>
+  
+  <View className="choice-parent">
+  <Choices name="DifficultToChoose" choice="single-radio" toName="src" showInline="true" required="true">
+    <Choice value="YES, both translations are close in quality and it was hard to choose between them."/>
+    <Choice value="NO, the translations I have chosen is visibly better."/>
+  </Choices>
+  </View>
+  
+  <Header style="margin-top: 40px" value="Press 'SUBMIT' to proceed."/>
+</View>
