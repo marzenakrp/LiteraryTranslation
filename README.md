@@ -66,7 +66,7 @@ Each entry contains the following information:
 - `text1_tag`: *(str)* specifies the type of translation 1 as one of the following: SENT (sentence-level translation with `davinci-003`), PARA (paragraph-level translation with `davinci-003`), PARA_SENT (sentence-level translation including context with `davinci-003`), GTr (output of `GoogleTranslate`);
 - `text2_tag`: *(str)* specifies the type of translation 2 as one of the following: SENT (sentence-level translation with `davinci-003`), PARA (paragraph-level translation with `davinci-003`), PARA_SENT (sentence-level translation including context with `davinci-003`), GTr (output of `GoogleTranslate`);
 - `difficult_choice`: *(str)* indicator of whether the translator found both translations of similar quality (multiple-choice);
-- `comment`: *(str)* translator's comment about the two translation, all references to translations were unified so that translation 1 is referred to as `T1` while translation 2 is referred to as `T2`;
+- `comment`: *(str)* translator's comment about the two translation, all references to translations were unified so that translation 1 is referred to as `T1` while translation 2 is referred to as `T2`. Comments made in Polish or Japanese were translated into English;
 - `choice`: *(str)* translator's preferences as to which of the two translations is better (multiple-choice);
 - `added_omitted`: *(str)* information on whether any of the texts adds or omits important information (multiple-choice);
 - `annotations`: *(dict)* a dictionary containing error annotations for `text1` and `text2`. `start` and `end` indicate indices in the given text, `labels` is a list with all labels assigned to the given span.
