@@ -80,6 +80,10 @@ Translation errors in `v1` can be one of the following:
 - `REGISTER` - translation uses wrong register with respect to the source text (annotated mostly for Japanese were these errors were aparent);
 - `REPETITION` - text was repeated in the translation (annotated later for PARA_SENT).
 
+### Disclaimer
+
+The selection of novel fragments curated for this evaluation covers a wide variety of topics. Please be aware that among these, certain subject may delve into sensitive issues including mental health struggles such as depression.
+
 ### Citation Information
 If you use this dataset, please cite it as follows:
 ```
