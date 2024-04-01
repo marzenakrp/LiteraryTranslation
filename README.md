@@ -84,7 +84,7 @@ Translation errors in `v1` can be one of the following:
 
 The selection of novel fragments curated for this evaluation covers a wide variety of topics. Please be aware that among these, certain subject may delve into sensitive issues including mental health struggles such as depression.
 
-During the final check and translation of comment made in languages other than English a few inconsistencies were spotted. These were corrected in the annotations, however, the numbers in the paper were not updated yet. These corrections do NOT change the overall conclusion, if anything strengthened it, and will be corrected in the paper as soon as possible.
+During the final check and translation of comments made in languages other than English a few inconsistencies were spotted. These were corrected in the annotations, however, the numbers in the paper were not updated yet. These corrections do NOT change the overall conclusion, if anything strengthened it, and will be corrected in the paper as soon as possible (version published as WMT contains corrected numbers).
 
 ### Citation Information
 If you use this dataset, please cite it as follows:
