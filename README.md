@@ -6,7 +6,7 @@ This is the official repository for evaluation data from "Large language models 
 
 ## UPDATES
 
-- Added prompt demonstrations in the `base_data` folder.
+- Added prompt demonstrations in the `base_data` folder. The file contains `book` (book title), `source` (source paragraph), `target` (target paragraph), `source_lang` (source language), and `target_lang` (target language). 
 
 ## DATA
 
