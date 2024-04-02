@@ -4,10 +4,10 @@
 
 This is the official repository for evaluation data from "Large language models effectively leverage document-level context for literary translation, but critical errors persist" (check out our [paper](http://arxiv.org/abs/2304.03245) for details).
 
-### UPDATES
+## UPDATES
 
 
-### DATA
+## DATA
 ***
 
 This repository contains error annotations on machine translated literary work. The annotations were performed on two translation outputs at a time in [LabelStudio](https://labelstud.io/). You can view the actual interface simply by downloading the data in `./annotations/labelstudio_format_v1` and unploading it to LabelStudio. You will also need to use the code in `labelstudio_interface_code` as the interface. If you just want to download the actual data you should download the `./annotations/default_v1` file. This file contains the pairwise comparisons along with error annotations for each translation and translator's comments. Here is the general structure:
@@ -89,14 +89,25 @@ The selection of novel fragments curated for this evaluation covers a wide varie
 
 During the final check and translation of comments made in languages other than English a few inconsistencies were spotted. These were corrected in the annotations, however, the numbers in the paper were not updated yet. These corrections do NOT change the overall conclusion, if anything strengthened it, and will be corrected in the paper as soon as possible (version published as WMT contains corrected numbers).
 
-### Citation Information
+## Citation Information
 If you use this dataset, please cite it as follows:
 ```
-@misc{llm-literary-2023,
-author = {Marzena Karpinska and Mohit Iyyer},
-month = {4},
-title = {Large language models effectively leverage document-level context for literary translation, but critical errors persist},
-url = {https://arxiv.org/abs/2304.03245},
-year = {2023}
+@inproceedings{karpinska-iyyer-2023-large,
+    title = "Large Language Models Effectively Leverage Document-level Context for Literary Translation, but Critical Errors Persist",
+    author = "Karpinska, Marzena  and
+      Iyyer, Mohit",
+    editor = "Koehn, Philipp  and
+      Haddow, Barry  and
+      Kocmi, Tom  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Eighth Conference on Machine Translation",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.wmt-1.41",
+    doi = "10.18653/v1/2023.wmt-1.41",
+    pages = "419--451",
+    abstract = "Large language models (LLMs) are competitive with the state of the art on a wide range of sentence-level translation datasets. However, their ability to translate paragraphs and documents remains unexplored because evaluation in these settings is costly and difficult. We show through a rigorous human evaluation that asking the GPT-3.5 (text-davinci-003) LLM to translate an entire literary paragraph (e.g., from a novel) at once results in higher-quality translations than standard sentence-by-sentence translation across 18 linguistically-diverse language pairs (e.g., translating into and out of Japanese, Polish, and English). Our evaluation, which took approximately 350 hours of effort for annotation and analysis, is conducted by hiring translators fluent in both the source and target language and asking them to provide both span-level error annotations as well as preference judgments of which system{'}s translations are better. We observe that discourse-level LLM translators commit fewer mistranslations, grammar errors, and stylistic inconsistencies than sentence-level approaches. With that said, critical errors still abound, including occasional content omissions, and a human translator{'}s intervention remains necessary to ensure that the author{'}s voice remains intact. We publicly release our dataset and error annotations to spur future research on the evaluation of document-level literary translation.",
 }
 ```
