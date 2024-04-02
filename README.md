@@ -1,4 +1,4 @@
-# Translating World Literature at a Paragraph-Level
+# 📚 Translating World Literature at a Paragraph-Level
 
 [![arxiv](https://img.shields.io/badge/arXiv-2304.03245-b31b1b.svg)](http://arxiv.org/abs/2304.03245)
 
@@ -6,9 +6,9 @@ This is the official repository for evaluation data from "Large language models 
 
 ## UPDATES
 
-- Added prompt demonstrations in the `base_data` folder. The file contains `book` (book title), `source` (source paragraph), `target` (target paragraph), `source_lang` (source language), and `target_lang` (target language).
-- Added source data in the `base_data` folder. The file contains `source` (source text used for translation), `target` (target text roughly aligned for reference purpose only; human translation not used in the experiments), `source_lang` (source language), and `target_lang` (target language).
--  Added sentencized data in the `base_data` folder. 
+📚 Added prompt demonstrations in the `base_data` folder. The file contains `book` (book title), `source` (source paragraph), `target` (target paragraph), `source_lang` (source language), and `target_lang` (target language).
+📚 Added source data in the `base_data` folder. The file contains `source` (source text used for translation), `target` (target text roughly aligned for reference purpose only; human translation not used in the experiments), `source_lang` (source language), and `target_lang` (target language).
+📚  Added sentencized data in the `base_data` folder. 
 
 ## DATA
 
